@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "728617980920",
+    "project_id": "appauth-d02b5",
+    "storage_bucket": "appauth-d02b5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728617980920:android:9c97b3d308f4b4a5383c0d",
+        "android_client_info": {
+          "package_name": "com.example.appauthen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "728617980920-gl32iboj21rv909cmt35vqq9nrjga7nn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyOVUCY5XemXnuxaJhMsHZQNR4paNx8bc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "728617980920-gl32iboj21rv909cmt35vqq9nrjga7nn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
