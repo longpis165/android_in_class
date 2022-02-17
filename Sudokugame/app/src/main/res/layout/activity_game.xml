@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="337dp"
+        android:layout_height="317dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="37dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <fragment
+                android:id="@+id/cellGroupFragment"
+                android:name="com.example.sudokugame.fragments.CellGroupFragment"
+                android:layout_width="92dp"
+                android:layout_height="106dp"
+                android:layout_weight="1"
+                android:tag="0" />
+
+            <fragment
+                android:id="@+id/cellGroupFragment2"
+                android:name="com.example.sudokugame.fragments.CellGroupFragment"
+                android:layout_width="92dp"
+                android:layout_height="106dp"
+                android:layout_weight="1"
+                android:tag="1" />
+
+            <fragment
+                android:id="@+id/cellGroupFragment3"
+                android:name="com.example.sudokugame.fragments.CellGroupFragment"
+                android:layout_width="92dp"
+                android:layout_height="106dp"
+                android:layout_weight="1"
+                android:tag="2" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <fragment
+                android:id="@+id/cellGroupFragment4"
+                android:name="com.example.sudokugame.fragments.CellGroupFragment"
+                android:layout_width="92dp"
+                android:layout_height="106dp"
+                android:layout_weight="1"
+                android:tag="3" />
+
+            <fragment
+                android:id="@+id/cellGroupFragment5"
+                android:name="com.example.sudokugame.fragments.CellGroupFragment"
+                android:layout_width="92dp"
+                android:layout_height="106dp"
+                android:layout_weight="1"
+                android:tag="4" />
+
+            <fragment
+                android:id="@+id/cellGroupFragment6"
+                android:name="com.example.sudokugame.fragments.CellGroupFragment"
+                android:layout_width="92dp"
+                android:layout_height="106dp"
+                android:layout_weight="1"
+                android:tag="5" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="117dp">
+
+            <fragment
+                android:id="@+id/cellGroupFragment7"
+                android:name="com.example.sudokugame.fragments.CellGroupFragment"
+                android:layout_width="92dp"
+                android:layout_height="106dp"
+                android:layout_weight="1"
+                android:tag="6" />
+
+            <fragment
+                android:id="@+id/cellGroupFragment8"
+                android:name="com.example.sudokugame.fragments.CellGroupFragment"
+                android:layout_width="92dp"
+                android:layout_height="106dp"
+                android:layout_weight="1"
+                android:tag="7" />
+
+            <fragment
+                android:id="@+id/cellGroupFragment9"
+                android:name="com.example.sudokugame.fragments.CellGroupFragment"
+                android:layout_width="92dp"
+                android:layout_height="106dp"
+                android:layout_weight="1"
+                android:tag="8" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/round_btn"
+        android:onClick="onGoBackButtonClicked"
+        android:text="@string/go_back_button"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCheckBoard" />
+
+    <Button
+        android:id="@+id/buttonShowInstructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/round_btn"
+        android:onClick="onShowInstructionsButtonClicked"
+        android:text="@string/show_instructions"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCheckBoard" />
+
+    <Button
+        android:id="@+id/buttonCheckBoard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="234dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="37dp"
+        android:background="@drawable/round_btn"
+        android:onClick="onCheckBoardButtonClicked"
+        android:text="@string/check_board"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
